@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>JS Intensive Course (Mathshub)</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navigation" id="navigation">
+            <a href="#survey" class="ancor">Анкета</a>
+            <a href="#interactive" class="ancor">Игра</a>
+            <a href="#counters" class="ancor">Счётчики</a>
+            <a href="#blog" class="ancor">Блог</a>
+        </nav>
+        <div class="container">
+            <div class="survey">
+                <div class="survey__body" id="survey">
+                    <div class="survey__wrapper">
+                        <div class="survey__header">
+                            Анкета
+                        </div>
+                        <div class="survey__info">
+                            <div class="info__body">
+                                <div class="info__row">
+                                    <span class="info__point">
+                                        Имя:
+                                    </span>
+                                    <span class="info__field info__field-name">
+                                        Иван
+                                    </span>
+                                </div>
+                                <div class="info__row">
+                                    <span class="info__point">
+                                        Изучаемый язык:
+                                    </span>
+                                    <span class="info__field info__field-lang">
+                                        Java Script
+                                    </span>
+                                </div>
+                                <div class="info__row">
+                                    <span class="info__point">
+                                        Нравится ли вам этот язык?:
+                                    </span>
+                                    <span class="info__field info__field-likeLang">
+                                        да
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="survey__photo">
+                        <img src="/img/IMG_2947.jpg" alt="survey photo" title="student photo" class="user-photo">
+                    </div>
+                </div>
+            </div>
+            <div class="interactive-block" id="interactive">
+                <div class="image__block">
+                    <div class="img-container">
+                        <img src="https://picsum.photos/1000/700" alt="this\'s a picture" class="image"
+                            title="random picture">
+                    </div>
+                </div>
+                <div class="game-block " id="game">
+                    <div class="game__header">
+                        Игра
+                    </div>
+                    <div class="game__expression" tabindex="1" hidden>
+                        задача
+                    </div>
+                    <div class="game__answer-block" hidden>
+                        <label for="numeric-input">Ваш ответ</label>
+                        <input type="number" class="game__number-input" id="numeric-input" placeholder=" " required>
+                    </div>
+                    <input type="button" value="Начать игру" class="game__button" tabindex="2">
+                </div>
+            </div>
+            <div class="choose-block" id="counters">
+                <h2 class="choose__header">
+                    Выберите элементы
+                </h2>
+                <div class="chosen__counter">
+                    <span class="counter__text">
+                        Элементов выбрано
+                    </span>
+                    <span class="counter__number">
+                        0
+                    </span>
+                    <span class="counter__text">
+                        Стоимость
+                    </span>
+                    <span class="counter__price">
+                        0
+                    </span>
+                </div>
+                <div class="chosen">
+                    <div class="chosen__item">1</div>
+                    <div class="chosen__item">2</div>
+                    <div class="chosen__item">3</div>
+                    <div class="chosen__item">4</div>
+                    <div class="chosen__item">5</div>
+                    <div class="chosen__item">6</div>
+                    <div class="chosen__item">7</div>
+                    <div class="chosen__item">8</div>
+                    <div class="chosen__item">9</div>
+                    <div class="chosen__item">10</div>
+                    <div class="chosen__item">11</div>
+                    <div class="chosen__item">12</div>
+                </div>
+            </div>
+            <div class="blog" id="blog">
+                <h2 class="blog__header">
+                    Блог
+                </h2>
+                <button class="show-posts">
+                    Показать посты
+                </button>
+                <div class="blog__posts-container">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
